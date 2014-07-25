@@ -33,13 +33,18 @@
 
         function init(){ 
             myMap = new ymaps.Map("map", {
-                center: [55.76, 37.64],
-                zoom: 7
+                center: [46.474870, 30.738471],
+                zoom: 17
             }); 
             
-            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-                hintContent: 'Москва!',
-                balloonContent: 'Столица России'
+            myPlacemark = new ymaps.Placemark([46.474870, 30.738471], {
+                hintContent: 'Мусор',
+                balloonContent: 'Мусор',
+				style : {
+                    balloonStyle : {
+                        template : "<div style=\"color:#0A0\">$[description]</div>"
+                    }
+                }
             });
             
             myMap.geoObjects.add(myPlacemark);
@@ -50,7 +55,7 @@
     <div class="container-fluid">
 		<div class="row-fluid">
 		<div class="col-md-12">
-			<div id="map" style="width: 600px; height: 400px"></div>
+			<div id="map" style="width: 600px; height: 400px; margin: 0 auto;"></div>
 		</div>
 		</div>
 	</div>
