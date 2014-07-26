@@ -1,1 +1,1 @@
-C:\WORK\SweepItUp\SweepItUp\SweepItUp.csproj;neutral
+C:\WORK\sweepitup\source\mobile\SweepItUp\SweepItUp.csproj;neutral

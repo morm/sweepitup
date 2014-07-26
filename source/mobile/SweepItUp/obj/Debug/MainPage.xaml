@@ -21,18 +21,27 @@
         </Button>
         <TextBlock FontSize="25" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" Text="Тип вторичного сырья" VerticalAlignment="Top" Width="273" Height="34"/>
         <TextBlock FontSize="25" HorizontalAlignment="Left" Margin="10,218,0,0" TextWrapping="Wrap" Text="Количество" VerticalAlignment="Top" Height="34" Width="218"/>
-        <Button x:ConnectionId='4' Name="btnGarbageLow" Margin="18,267,0,253" Width="120" Height="120" BorderThickness="0"                            >
-            <Image Source="/Assets/garbage_low_250.jpg" HorizontalAlignment="Left" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100"/>
+        <!--<Button Name="btnGarbageLow" Margin="65,324,0,296" Width="20" Height="20" BorderThickness="0" Click="btnGarbageLow_Click">
+            <Image Source="/Assets/garbage_low_250.jpg" HorizontalAlignment="Left" Height="40" Margin="0,0,0,0" VerticalAlignment="Top" Width="40"/>
         </Button>
-        <Button x:ConnectionId='5' Name="btnGarbageMiddle" Margin="140,267,0,0" VerticalAlignment="Top" Width="120" Height="120" BorderThickness="0"                               >
+        <Button Name="btnGarbageMiddle" Margin="140,267,0,0" VerticalAlignment="Top" Width="120" Height="120" BorderThickness="0" Click="btnGarbageMiddle_Click">
             <Image Source="/Assets/garbage_middle_250.jpg" HorizontalAlignment="Left" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100"/>
         </Button>
-        <Button x:ConnectionId='6' Name="btnGarbageFull" Margin="263,267,0,0" VerticalAlignment="Top" Width="120" Height="120" BorderThickness="0"                             >
+        <Button Name="btnGarbageFull" Margin="263,267,0,0" VerticalAlignment="Top" Width="120" Height="120" BorderThickness="0" Click="btnGarbageFull_Click">
             <Image Source="/Assets/garbage_full_250.jpg" HorizontalAlignment="Left" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100"/>
-        </Button>
-        <CheckBox Name="cbxName" HorizontalAlignment="Left" Margin="10,405,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Content="Отсортирован" />
-        <TextBox Name="userName" HorizontalAlignment="Left" Margin="10,474,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Ваше имя"/>
-        <Button x:ConnectionId='7' Name="btnSend" Content="Отправить" HorizontalAlignment="Left" Margin="206,531,0,0" VerticalAlignment="Top" Height="70" Width="184"                      />
+        </Button>-->
+        <CheckBox Name="cbxName" HorizontalAlignment="Left" Margin="10,460,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="40" Content="Отсортирован" />
+        <TextBox Name="userName" HorizontalAlignment="Left" Margin="10,519,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Ваше имя"/>
+        <Button x:ConnectionId='4' Name="btnSend" Content="Отправить" HorizontalAlignment="Left" Margin="206,570,0,0" VerticalAlignment="Top" Height="70" Width="184"                      />
+        <Button x:ConnectionId='5' Name="btnPaperLow" Content="мало" HorizontalAlignment="Left" Margin="27,247,0,0" VerticalAlignment="Top" Height="15" Width="109"                          />
+        <Button x:ConnectionId='6' Name="btnPaperMiddle" Content="средне" HorizontalAlignment="Left" Margin="27,291,0,0" VerticalAlignment="Top" Height="85"                             />
+        <Button x:ConnectionId='7' Name="btnPaperHigh" Content="много" HorizontalAlignment="Left" Margin="27,362,0,0" VerticalAlignment="Top" Height="110"                           />
+        <Button x:ConnectionId='8' Name="btnGlassLow" Content="мало" HorizontalAlignment="Left" Margin="149,247,0,0" VerticalAlignment="Top" Height="15" Width="109"                          />
+        <Button x:ConnectionId='9' Name="btnPlasticLow" Content="мало" HorizontalAlignment="Left" Margin="272,247,0,0" VerticalAlignment="Top" Height="15" Width="109"                            />
+        <Button x:ConnectionId='10' Name="btnPlasticMiddle" Content="средне" HorizontalAlignment="Left" Margin="272,291,0,0" VerticalAlignment="Top" Height="85"                               />
+        <Button x:ConnectionId='11' Name="btnGlassMiddle" Content="средне" HorizontalAlignment="Left" Margin="149,291,0,0" VerticalAlignment="Top" Height="85"                             />
+        <Button x:ConnectionId='12' Name="btnPlasticHigh" Content="много" HorizontalAlignment="Left" Margin="272,362,0,0" VerticalAlignment="Top" Height="110"                             />
+        <Button x:ConnectionId='13' Name="btnGlassHigh" Content="много" HorizontalAlignment="Left" Margin="149,362,0,0" VerticalAlignment="Top" Height="110"                           />
     </Grid>
 </Page>
 
