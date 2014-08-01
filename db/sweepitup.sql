@@ -2,7 +2,8 @@
 SQLyog Professional v11.51 (64 bit)
 MySQL - 5.6.14-log : Database - sweepitup
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -16,17 +17,17 @@ MySQL - 5.6.14-log : Database - sweepitup
 
 CREATE TABLE `average_garbage` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `date` datetime NOT NULL,
-  `glass` int(11) unsigned zerofill DEFAULT NULL,
-  `plastmass` int(11) unsigned zerofill DEFAULT NULL,
-  `paper` int(11) unsigned zerofill DEFAULT NULL,
-  `metall` int(11) unsigned zerofill DEFAULT NULL,
-  `stones` int(11) unsigned zerofill DEFAULT NULL,
-  `sorted` tinyint(1) DEFAULT NULL,
-  `longitude` char(1) NOT NULL,
-  `latitude` char(1) NOT NULL,
-  `username` char(1) DEFAULT NULL,
-  `email` char(1) DEFAULT NULL,
+  `date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `glass` char(1)  NOT NULL DEFAULT 'N',
+  `plastmass` char(1)  NOT NULL DEFAULT 'N',
+  `paper` char(1)  NOT NULL DEFAULT 'N',
+  `metall` char(1)  NOT NULL DEFAULT 'N',
+  `stones` char(1)  NOT NULL DEFAULT 'N',
+  `sorted` tinyint(1) DEFAULT 0,
+  `longitude` double NOT NULL,
+  `latitude` double NOT NULL,
+  `username` text DEFAULT '',
+  `email` text DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -34,17 +35,17 @@ CREATE TABLE `average_garbage` (
 
 CREATE TABLE `garbage` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `date` datetime NOT NULL,
-  `glass` int(11) unsigned zerofill DEFAULT NULL,
-  `plastmass` int(11) unsigned zerofill DEFAULT NULL,
-  `paper` int(11) unsigned zerofill DEFAULT NULL,
-  `metall` int(11) unsigned zerofill DEFAULT NULL,
-  `stones` int(11) unsigned zerofill DEFAULT NULL,
-  `sorted` tinyint(1) DEFAULT NULL,
-  `longitude` char(1) NOT NULL,
-  `latitude` char(1) NOT NULL,
-  `username` char(1) DEFAULT NULL,
-  `email` char(1) DEFAULT NULL,
+  `date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `glass` char(1)  NOT NULL DEFAULT 'N',
+  `plastmass` char(1)  NOT NULL DEFAULT 'N',
+  `paper` char(1)  NOT NULL DEFAULT 'N',
+  `metall` char(1)  NOT NULL DEFAULT 'N',
+  `stones` char(1)  NOT NULL DEFAULT 'N',
+  `sorted` tinyint(1) DEFAULT 0,
+  `longitude` double NOT NULL,
+  `latitude` double NOT NULL,
+  `username` text DEFAULT '',
+  `email` text DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
