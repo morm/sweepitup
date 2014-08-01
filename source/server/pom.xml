@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sweep.it.up</groupId>
+  <artifactId>sweepitup</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>sweepitup Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.1.0</version>
+	</dependency>
+	<dependency>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20140107</version>
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.31</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>sweepitup</finalName>
+  </build>
+  <organization>
+  	<name>SweepItUp</name>
+  </organization>
+  <scm>
+    <connection>scm:git:git://git@github.com:morm/sweepitup.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:morm/sweepitup.git</developerConnection>
+    <url>https://github.com/morm/sweepitup.git</url>
+  </scm>  
+  <issueManagement>
+  	<url>http://159.253.20.162:3000/projects/sweepitup</url>
+  	<system>Redmine</system>
+  </issueManagement>
+</project>
